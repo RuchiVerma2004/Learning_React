@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root"></div>
+
+<!-- 
+<script>
+        const heading = document.createElement("h1");
+        const root = document.querySelector("#root");
+        heading.innerHTML = "hello there i am created using jS";
+        root.appendChild(heading);
+    </script>    
+-->
+
+    <!-- What is crossorigin -->
+    <!-- why there are two files -->
+     <!-- first one is core file of react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <!-- second one is react dom, this is used to modify dom -->
+     <!-- why react made differnt file for both of them ? -->
+    <!-- Ans: because react does not work only in browser it works on mobiles also for example (react native) -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <script src="app.js"></script>
+    <!-- using react for the first time -->
+     
+</body>
+</html>
