@@ -2,10 +2,10 @@
   "name": "learn_react",
   "version": "1.0.0",
   "description": "learn_react",
-  "main": "app.js",
+  
   "scripts": {
     "start": "parcel index.html",
-    "build": "parvel build index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {

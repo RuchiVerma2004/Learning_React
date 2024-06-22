@@ -115,17 +115,38 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const main = React.createElement("div",
-    {id:"outer"},
-    [React.createElement("div",{id:"inner"},"i am in innner div"),
-    React.createElement("div",{id:"inner"},"i am in innner div"),
-    React.createElement("div",{id:"inner"},"i am in innner div"),
-    React.createElement("div",{id:"inner"},"i am in innner div")]
-);
+// const main = React.createElement("div",
+//     {id:"outer"},
+//     [React.createElement("div",{id:"inner"},"i am in innner div"),
+//     React.createElement("div",{id:"inner"},"i am in innner div"),
+//     React.createElement("div",{id:"inner"},"i am in innner div"),
+//     React.createElement("div",{id:"inner"},"i am in innner div")]
+// );
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(main);
+
+// const heading = React.createElement("h1",
+//     {id:"heading"},
+//     "i am a heading created by React.createElement"
+// );
+
+// JSX Syntax 
+const Head =()=> <h1 id = "heading">hello there here is the use of JSX to make codeing easier</h1>;
+
+
+// React Component
+// Component composition 
+const Heading = () => {
+  return (
+    <div>
+        <h1 id="heading"> hello there here comes use of react component</h1>
+        <Head/>
+    </div>
+    )
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(main);
-
+root.render(<Heading/>);
 
 
 
