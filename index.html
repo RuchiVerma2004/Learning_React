@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root"> hello there!</div>
 
 <!-- 
 <script>
@@ -17,7 +17,7 @@
         root.appendChild(heading);
     </script>    
 -->
-
+    <!-- It is not a good practice to use react through cdn links -->
     <!-- What is crossorigin -->
     <!-- why there are two files -->
      <!-- first one is core file of react -->
@@ -27,7 +27,11 @@
     <!-- Ans: because react does not work only in browser it works on mobiles also for example (react native) -->
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
-    <script src="app.js"></script>
+
+
+    <!-- <script src="app.js"></script> this will not work as it will trat app.js as normal js and normal js does not knows what import is so we will resolve this issue using type="module" -->
+    <script type="module" src="app.js"></script>
+
     <!-- using react for the first time -->
      
 </body>

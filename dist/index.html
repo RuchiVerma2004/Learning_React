@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="/index.9e4c6fd2.css">
+</head>
+<body>
+    <div id="root"> hello there!</div>
+
+<!-- 
+<script>
+        const heading = document.createElement("h1");
+        const root = document.querySelector("#root");
+        heading.innerHTML = "hello there i am created using jS";
+        root.appendChild(heading);
+    </script>    
+-->
+    <!-- It is not a good practice to use react through cdn links -->
+    <!-- What is crossorigin -->
+    <!-- why there are two files -->
+     <!-- first one is core file of react -->
+    <script crossorigin="" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <!-- second one is react dom, this is used to modify dom -->
+     <!-- why react made differnt file for both of them ? -->
+    <!-- Ans: because react does not work only in browser it works on mobiles also for example (react native) -->
+    <script crossorigin="" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+
+
+    <!-- <script src="app.js"></script> this will not work as it will trat app.js as normal js and normal js does not knows what import is so we will resolve this issue using type="module" -->
+    <script src="/index.5baa4167.js" defer=""></script>
+
+    <!-- using react for the first time -->
+     
+</body>
+</html>

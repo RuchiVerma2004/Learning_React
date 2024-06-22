@@ -111,6 +111,20 @@
 
 //react is used for building applications with a lot of simplicity and ease of use features.
 
+// other method other than cdn link
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const main = React.createElement("div",
+    {id:"outer"},
+    [React.createElement("div",{id:"inner"},"i am in innner div"),
+    React.createElement("div",{id:"inner"},"i am in innner div"),
+    React.createElement("div",{id:"inner"},"i am in innner div"),
+    React.createElement("div",{id:"inner"},"i am in innner div")]
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(main);
 
 
 

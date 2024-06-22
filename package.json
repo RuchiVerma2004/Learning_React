@@ -4,11 +4,23 @@
   "description": "learn_react",
   "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parvel build index.html",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuchiVerma2004/Learning_React.git"
+  },
+  "keywords": [],
   "author": "ruchi",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
