@@ -3046,64 +3046,143 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-// const main = React.createElement("div",
-//     {id:"outer"},
-//     [React.createElement("div",{id:"inner"},"i am in innner div"),
-//     React.createElement("div",{id:"inner"},"i am in innner div"),
-//     React.createElement("div",{id:"inner"},"i am in innner div"),
-//     React.createElement("div",{id:"inner"},"i am in innner div")]
-// );
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(main);
-// const heading = React.createElement("h1",
-//     {id:"heading"},
-//     "i am a heading created by React.createElement"
-// );
-// JSX Syntax 
-const Head = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        id: "heading",
-        children: "hello there here is the use of JSX to make codeing easier"
-    }, void 0, false, {
-        fileName: "app.js",
-        lineNumber: 135,
-        columnNumber: 18
-    }, undefined);
-_c = Head;
-// React Component
-// Component composition 
-const Heading = ()=>{
+/*
+*Header
+* - Logo
+* - Nav bar
+*Body
+* - Search
+* - Restaurent Container
+* -- Restaurent Card
+* - footer
+* -- Copyright
+* -- Links
+* -- Address
+* -- Contact
+*/ const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                id: "heading",
-                children: " hello there here comes use of react component"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: "logo.jpg",
+                    alt: "img not found"
+                }, void 0, false, {
+                    fileName: "app.js",
+                    lineNumber: 174,
+                    columnNumber: 13
+                }, undefined)
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 143,
+                lineNumber: 173,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Head, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 178,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 178,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                children: "About Us"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 179,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 179,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                children: "Contact Us"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 180,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 180,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#",
+                                children: "Cart"
+                            }, void 0, false, {
+                                fileName: "app.js",
+                                lineNumber: 181,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 181,
+                            columnNumber: 17
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "app.js",
+                    lineNumber: 177,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 144,
+                lineNumber: 176,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 142,
+        lineNumber: 172,
         columnNumber: 5
     }, undefined);
 };
-_c1 = Heading;
+_c = Header;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+            fileName: "app.js",
+            lineNumber: 191,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 190,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 149,
+    lineNumber: 198,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
-$RefreshReg$(_c, "Head");
-$RefreshReg$(_c1, "Heading");
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$6024.postlude(module);
 } finally {
